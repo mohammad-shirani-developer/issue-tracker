@@ -1,4 +1,9 @@
 @import "tailwindcss";
+export default {
+  plugins: 
+    "@tailwindcss/typography"
+  
+};
 
 :root {
  
