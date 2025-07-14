@@ -48,4 +48,6 @@ const IssuesPage = async () => {
   );
 };
 
+export const dynamic = "force-daynamic";
+
 export default IssuesPage;
