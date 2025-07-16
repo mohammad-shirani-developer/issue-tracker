@@ -1,7 +1,5 @@
 "use client";
-import { Status } from "@prisma/client";
 import { Select } from "@radix-ui/themes";
-import React from "react";
 
 const statuses: { label: string; value?: string }[] = [
   { label: "All", value: "All" },
