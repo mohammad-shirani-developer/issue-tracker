@@ -14,6 +14,8 @@ export async function PATCH(request:NextRequest,{params}:{params:{id:string}}){
 
     const body=await request.json()
     const validation=patchIssueSchema.safeParse(body)
+    
+    
 
     if(!validation.success) 
         return NextResponse.json(validation.error.format(),{status:400})
@@ -42,6 +44,8 @@ if(assignedToUserId){
            assignedToUserId
         }
     })
+    console.log(updatedIssue);
+    
 
     return NextResponse.json(updatedIssue)
 }
